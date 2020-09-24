@@ -20,6 +20,7 @@ public class TLDriverFactory {
 		{
 			WebDriverManager.chromedriver().setup();
 			tldriver = ThreadLocal.withInitial(() -> new ChromeDriver(OptionsManager.getChromeOptions()));
+		//tldriver.set(new ChromeDriver());
 		}
 		else if(browser.equals("firefox"))
 		{

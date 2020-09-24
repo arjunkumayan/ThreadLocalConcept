@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Thread local test sanity suite]" parallel="tests">
-  <test thread-count="5" verbose="3" name="Google Test(failed)" parallel="methods">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Thread local test sanity suite]" parallel="tests">
+  <test thread-count="2" verbose="3" name="Google Test(failed)" parallel="methods">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.mytests.GoogleTest">

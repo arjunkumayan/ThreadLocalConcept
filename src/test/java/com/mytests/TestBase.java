@@ -20,7 +20,7 @@ public class TestBase {
 	}
 	
 	@AfterMethod
-	public void tearDown()
+	public synchronized void tearDown()
 	{
 		TLDriverFactory.getTLDriver().quit();	
 	}

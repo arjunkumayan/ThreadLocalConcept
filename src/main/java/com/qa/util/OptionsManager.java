@@ -18,10 +18,8 @@ public class OptionsManager {
 		co.addArguments("--disable-popup-blocking");
 	//	co.addArguments("--incognito");
 		
-		return co;
-		
-	}
-	
+		return co;		
+	}	
 	// get FireFox options
 	public static FirefoxOptions getFirefoxOptions()
 	{
@@ -34,11 +32,4 @@ public class OptionsManager {
 		fo.setCapability(FirefoxDriver.PROFILE, profile);
 		return fo;
 	}
-	
-	
-	
-	
-	
-	
-
 }
